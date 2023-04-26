@@ -2,7 +2,6 @@
 
 ::# Windows 11 bypass nem támogatott eszközökre
 
-@echo off & title get 11 on 'unsupported' PC || AveYo 2022.10.02
 if /i "%~f0" neq "%Public%\get11.cmd" goto setup
 set CLI=%*& set SOURCES=%SystemDrive%\$WINDOWS.~BT\Sources& set MEDIA=.& set /a VER=11
 if not defined CLI (exit /b) else if not exist %SOURCES%\SetupHost.exe (exit /b)
